@@ -10,4 +10,13 @@ import Foundation
 struct Country {
     var isoCode : String
     var name : String
+    var continent : String
+    
+    static func groupByContinent(_ countries : [Country])->Dictionary<String, [Country]>{
+        let groupByContinent = Dictionary(grouping : countries) {
+            (country)->String in
+            return country.continent
+        }
+        return groupByContinent
+    }
 }

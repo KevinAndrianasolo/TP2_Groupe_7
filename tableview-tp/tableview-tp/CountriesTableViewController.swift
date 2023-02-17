@@ -8,7 +8,7 @@
 import UIKit
 
 class CountriesTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,12 +23,13 @@ class CountriesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return groupedCountries.keys.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return countries.count
+        let key : String = continentKeys[section]
+        return groupedCountries[key]!.count
     }
 
     
@@ -36,7 +37,9 @@ class CountriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
 
         // Configure the cell...
-        let country = countries[indexPath.row]
+        let key : String = continentKeys[indexPath.section]
+        let countriesOfContinent : [Country] = groupedCountries[key]!
+        let country = countriesOfContinent[indexPath.row]
         cell.textLabel?.text = country.name
         cell.detailTextLabel?.text = country.isoCode
         cell.imageView?.image = UIImage(named: country.isoCode)
@@ -44,7 +47,8 @@ class CountriesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView:UITableView, titleForHeaderInSection section : Int)->String?{
-        return "Section \(section)"
+
+        return "Continent : \(continentKeys[section])"
     }
 
     /*
