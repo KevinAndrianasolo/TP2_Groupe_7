@@ -16,6 +16,7 @@
 		3697B086299F7662007C989C /* tableview_tpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697B085299F7662007C989C /* tableview_tpTests.swift */; };
 		3697B090299F7662007C989C /* tableview_tpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697B08F299F7662007C989C /* tableview_tpUITests.swift */; };
 		3697B092299F7662007C989C /* tableview_tpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697B091299F7662007C989C /* tableview_tpUITestsLaunchTests.swift */; };
+		3697B09F299F7DF6007C989C /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697B09E299F7DF6007C989C /* CountriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3697B08B299F7662007C989C /* tableview-tpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tableview-tpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3697B08F299F7662007C989C /* tableview_tpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableview_tpUITests.swift; sourceTree = "<group>"; };
 		3697B091299F7662007C989C /* tableview_tpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableview_tpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3697B09E299F7DF6007C989C /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3697B06E299F764A007C989C /* AppDelegate.swift */,
 				3697B070299F764A007C989C /* SceneDelegate.swift */,
 				3697B072299F764A007C989C /* ViewController.swift */,
+				3697B09E299F7DF6007C989C /* CountriesTableViewController.swift */,
 				3697B074299F764B007C989C /* Main.storyboard */,
 				3697B077299F7661007C989C /* Assets.xcassets */,
 				3697B079299F7661007C989C /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3697B09F299F7DF6007C989C /* CountriesTableViewController.swift in Sources */,
 				3697B073299F764A007C989C /* ViewController.swift in Sources */,
 				3697B06F299F764A007C989C /* AppDelegate.swift in Sources */,
 				3697B071299F764A007C989C /* SceneDelegate.swift in Sources */,
